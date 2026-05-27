@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: #f2f2f2;
+    }
+
+    .container{
+      width: 80%;
+      margin: 30px auto;
+    }
+
+    h1{
+      text-align: center;
+      color: darkblue;
+      margin-bottom: 25px;
+      font-family: Georgia, serif;
+    }
+
+    label{
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .gender{
+      margin-top: 10px;
+    }
+
+    .gender input{
+      width: auto;
+    }
+
+    button{
+      margin-top: 20px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background-color: navy;
+    }
+
+    h2{
+      text-align: center;
+      color: rgb(139, 0, 81);
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-family: Georgia, serif;
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    table, th, td{
+      border: 1px solid gray;
+    }
+
+    th{
+      background-color: rgb(139, 0, 130);
+      color: white;
+      padding: 10px;
+    }
+
+    td{
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter password">
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number">
+
+      <label>Date of Birth</label>
+      <input type="date">
+
+      <label>Select Course</label>
+      <select>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>React</option>
+      </select>
+
+      <label>Gender</label>
+
+      <div class="gender">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+      </div>
+
+      <label>Address</label>
+      <textarea rows="5" placeholder="Enter address"></textarea>
+
+      <button type="submit">Register</button>
+
+    </form>
+
+    <h2>Student Data Table</h2>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>City</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Rahul</td>
+        <td>HTML</td>
+        <td>Mumbai</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Sneha</td>
+        <td>CSS</td>
+        <td>Pune</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Amit</td>
+        <td>JavaScript</td>
+        <td>Nashik</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Priya</td>
+        <td>React</td>
+        <td>Nagpur</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</body>
+</html>
